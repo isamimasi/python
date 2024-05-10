@@ -1,5 +1,7 @@
 #############################
 #
+#python 3.11.3
+#
 #
 #############################
 import math
@@ -17,3 +19,14 @@ class CalcFree:
         tax = math.ceil(total * self.tax_rate)
         v= math.ceil (total + tax)
         return v
+"""
+fee1 = CalcFree()
+fee1.addItem(500)
+fee1.addItem(100)
+print (fee1.calc())
+###
+fee2= CalcFree()
+fee2.shipping_fee = 1500
+fee2.addItem(800)
+print (fee2.calc())
+"""
